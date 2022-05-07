@@ -24,6 +24,8 @@
 \geometry{papersize={148mm,105mm}}
 \usepackage[bookmarks]{hyperref}
 \usepackage[chorded]{songs}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
 
 \pagestyle{empty}
 
@@ -39,17 +41,15 @@
 \versesep=8pt
 
 \begin{document}
-
-\showindex{Complete Index of Songs}{titleidx}
-
-\songsection{Songs}
-\newpage
+\input{titelseite.tex}
+%\showindex{Complete Index of Songs}{titleidx}
+%\songsection{Songs}
 
 \begin{songs}{titleidx,authidx,scripidx} % Hier die Lieder reinbasteln
 
 	\input{songs/Lady_in_black.tex}
 	\input{songs/Roter_mond.tex}
-
+	\input{songs/Schilf.tex}
 
 
 
