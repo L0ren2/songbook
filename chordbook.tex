@@ -1,24 +1,23 @@
-% Copyright (C) 2018 Kevin W. Hamlen
-%
-% This program is free software; you can redistribute it and/or
-% modify it under the terms of the GNU General Public License
-% as published by the Free Software Foundation; either version 2
-% of the License, or (at your option) any later version.
-%
-% This program is distributed in the hope that it will be useful,
-% but WITHOUT ANY WARRANTY; without even the implied warranty of
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-% GNU General Public License for more details.
-%
-% You should have received a copy of the GNU General Public License
-% along with this program; if not, write to the Free Software
-% Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-% MA  02110-1301, USA.
-%
-% The latest version of this program can be obtained from
-% http://songs.sourceforge.net.
+%Das ist die Hauptdatei. 
+%Diese Datei ist die, welche von pdflatex übersetzt wird (erzeugt dann pdf). 
+%Dieses Liederbuch nutzt das Latex Songs Package, welches unter der GPLv2 steht. 
+%Eine Kopie der GPLv2 kann hier eingesehen werden: https://opensource.org/licenses/gpl-2.0.php 
+%Kurzum sagt die Lizenz, dass das Paket genutzt werden darf, und dass der Entwickler des Paketes 
+%für nichts haftbar gemacht werden kann. 
+%Durch die Nutzung des Paketes steht dieses Liederbuch automatisch auch unter der GPLv2 Lizenz. 
+%Für uns heißt das, wenn wir nach Quellcode gefragt werden, diesen auch ausgeben müssen. 
+%Wer unser Liederbuch modifiziert, muss bei Nachfrage ebenfalls sein Buch offenlegen. 
+%Es muss kenntlich sein, dass Nutzer des Liederbuches diese Rechte haben, 
+%somit muss (am besten in diesem Buch selbst) auf die Lizenz hingewiesen werden. 
+%Ein entsprechender Verweis wurde auf der Titelseite angebracht. 
+%Ein weiteres Problem stellt das Urheberrecht dar, wenn man ein solches Liederbuch bastelt. 
+%Tatsächlich ist es so, dass wir den gesamten Quellcode rausrücken müssen, wenn wir gefragt werden. 
+%Wir dürfen aber die vom Urheberrecht geschützen Liedtexte nicht einfach öffentlich zum Download anbieten. 
+%Mein Ansatz hierfür wäre, die Lieder als separates Projekt anzusehen und auch so zu pflegen,
+%denn dann trifft die GPLv2 nicht auf die Lieder sondern nur auf das Master-Layout zu. 
+%Die offizielle Version des letzten Satzes ist dann: "Wir nutzen nur Urheberrechtlich ungeschütztes Material 
+%und solches, von welchem wir eine Genehmigung haben"
 
-%\documentclass[paperwidth=110mm,paperheight=150mm,landscape]{article}
 \documentclass{book}
 \usepackage[lmargin=10mm, rmargin=5mm, tmargin=2mm, bmargin=2mm, text={15cm,10cm},centering]{geometry}
 \geometry{papersize={148mm,105mm}}
@@ -43,13 +42,11 @@
 \begin{document}
 \input{titelseite.tex}
 
-%\songsection{Songs}
-
-\begin{songs}{titleidx,authidx,scripidx} % Hier die Lieder reinbasteln
-
-	\input{songs/Lady_in_black.tex}
-	\input{songs/Roter_mond.tex}
-	\input{songs/Schilf.tex}
+\begin{songs}{titleidx,authidx,scripidx} 
+% Hier die Lieder reinbasteln
+	\input{songs/Lady_in_black}
+	\input{songs/Roter_mond}
+	\input{songs/Schilf}
 
 \end{songs}
 
