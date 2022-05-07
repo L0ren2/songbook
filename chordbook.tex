@@ -42,7 +42,7 @@
 
 \begin{document}
 \input{titelseite.tex}
-%\showindex{Complete Index of Songs}{titleidx}
+
 %\songsection{Songs}
 
 \begin{songs}{titleidx,authidx,scripidx} % Hier die Lieder reinbasteln
@@ -51,10 +51,11 @@
 	\input{songs/Roter_mond.tex}
 	\input{songs/Schilf.tex}
 
-
-
 \end{songs}
 
+\showindex{Inhaltsverzeichnis}{titleidx}
+%nicht genutzte indizes für andere inhaltsverzeichnisse
+%sollen diese genutzt werden, muss das makefile geändert werden!
 %\showindex{Index of Authors and Composers}{authidx}
 %\showindex{Index of Scripture}{scripidx}
 
