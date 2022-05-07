@@ -19,9 +19,9 @@
 % http://songs.sourceforge.net.
 
 %\documentclass[paperwidth=110mm,paperheight=150mm,landscape]{article}
-\documentclass{article}
-\usepackage[margin=5mm,text={15cm,10cm},centering]{geometry}
-\geometry{papersize={148mm,105mm},total={140mm,90mm}}
+\documentclass{book}
+\usepackage[lmargin=10mm, rmargin=5mm, tmargin=2mm, bmargin=2mm, text={15cm,10cm},centering]{geometry}
+\geometry{papersize={148mm,105mm}}
 \usepackage[bookmarks]{hyperref}
 \usepackage[chorded]{songs}
 
@@ -48,16 +48,15 @@
 \begin{songs}{titleidx,authidx,scripidx} % Hier die Lieder reinbasteln
 
 	\input{songs/Lady_in_black.tex}
-
-
+	\input{songs/Roter_mond.tex}
 
 
 
 
 \end{songs}
 
-\showindex{Index of Authors and Composers}{authidx}
-\showindex{Index of Scripture}{scripidx}
+%\showindex{Index of Authors and Composers}{authidx}
+%\showindex{Index of Scripture}{scripidx}
 
 \end{document}
 
