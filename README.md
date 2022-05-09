@@ -6,7 +6,9 @@ The original songs package itself has not been modified for this purpose.
 If you are using this as your template please be sure to share your sources as well. 
 Happy singing :)
 
-### Initial setup
+### general build instructions
 
-If you just cloned this and `make` did not work, because file `chordbook.out` does not exist, please try `pdflatex chordbook.tex` and afterwards try to run `make` again. 
+On Linux (Mac should work the same) just run `make` inside the build directory. 
+
+On Windows just run `make.bat` inside the build directory. 
 
