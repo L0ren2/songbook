@@ -25,6 +25,7 @@
 \usepackage[chorded]{songs}
 \usepackage{graphicx}
 \usepackage[ngerman]{babel}
+\usepackage{afterpage}
 
 \pagestyle{empty}
 
@@ -41,6 +42,18 @@
 
 \begin{document}
 \input{titelseite.tex}
+
+%two empty pages
+\newpage
+\mbox{}
+\thispagestyle{empty}
+\newpage
+
+%one epty page
+%\null
+%\thispagestyle{empty}
+%\addtocounter{page}{-1}
+%\newpage
 
 \begin{songs}{titleidx,authidx,scripidx} 
 	\input{songs/00_import}
