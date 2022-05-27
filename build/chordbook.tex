@@ -47,10 +47,8 @@
   \lineskip=1pt
 }
 
-%\input{layout.tex} %nur für den finalen compile einkommentieren, wenn das liederbuch vorder-rückseite-konform gedruckt werden soll
-
 \begin{document}
-\input{titelseite.tex}
+\input{titelseite}
 
 %two empty pages
 \newpage
@@ -58,17 +56,12 @@
 \thispagestyle{empty}
 \newpage
 
-%one empty page
-%\null
-%\thispagestyle{empty}
-%\addtocounter{page}{-1}
-%\newpage
-
 \begin{songs}{titleidx,authidx,scripidx} 
 	\input{songs/00_import}
 \end{songs}
 
 \showindex{Inhaltsverzeichnis}{titleidx}
+
 %nicht genutzte indizes für andere inhaltsverzeichnisse
 %sollen diese genutzt werden, muss das makefile angepasst werden!
 %\showindex{Index of Authors and Composers}{authidx}
