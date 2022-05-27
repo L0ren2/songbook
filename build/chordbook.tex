@@ -35,10 +35,17 @@
 
 \songcolumns{1}
 \usepackage[parfill]{parskip}
-\renewcommand{\lyricfont}{\sffamily\small}
+\renewcommand{\lyricfont}{\sffamily\normalsize}
 \renewcommand\printchord[1]{\sffamily\textmd\large#1}
 \renewcommand{\stitlefont}{\sffamily\textmd}
 \versesep=8pt
+
+%das hier adjustiert den abstand zwischen den chords und dem liedtext darunter
+\renewcommand{\clineparams}{
+  \baselineskip=11pt
+  \lineskiplimit=1pt
+  \lineskip=1pt
+}
 
 %\input{layout.tex} %nur für den finalen compile einkommentieren, wenn das liederbuch vorder-rückseite-konform gedruckt werden soll
 
@@ -51,7 +58,7 @@
 \thispagestyle{empty}
 \newpage
 
-%one epty page
+%one empty page
 %\null
 %\thispagestyle{empty}
 %\addtocounter{page}{-1}
