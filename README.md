@@ -10,7 +10,7 @@ Happy singing :)
 
 ### prerequisites
 
-The chordbook assumes that you have installed a view general latex-packages for using latex. 
+The chordbook assumes that you have installed a few general latex-packages for using latex. 
 Especially `pdflatex` and `luatex` are a must have. 
 Windows users can get access to these via installing [MikTex](https://miktex.org/). 
 I assume that UNIX-users know how to install software (or at least how to search for the information on google or duckduckgo) since they are superior ;)
@@ -63,7 +63,7 @@ Here one line makes a lot of sense, because the line is short enough that it wil
 
 ## Videos and documentation are inconsistent! 
 
-If you don't know what this passage is, in short: I made a view videos where I talk about this stuff, showing examples. The videos are on YouTube, however they are not listed and I will not share the link publically. 
+If you don't know what this passage is, in short: I made a few videos where I talk about this stuff, showing examples. The videos are on YouTube, however they are not listed and I will not share the link publically. 
 Now that you know, re-read the title of this section. 
 
 In this case, the documentation here is right. This is because it takes a lot longer to make and re-make a video than to change up some words in a document like this. 
