@@ -16,5 +16,5 @@ fine: chordbook.tex chordbook.out cbtitle.sxd
 	pdflatex chordbook_tmp.tex
 	@echo Compile Successful!
 	@cp chordbook_tmp.pdf ../release/chordbook_print.pdf
-	@rm chordbook_tmp.*
+	@rm -f chordbook_tmp.*
 

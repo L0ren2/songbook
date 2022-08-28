@@ -1,5 +1,0 @@
-[0] Config.pm:312> INFO - This is Biber 2.15
-[0] Config.pm:315> INFO - Logfile is 'chordbook.blg'
-[146] biber:330> INFO - === Fr Dez 10, 2021, 20:15:37
-[371] Utils.pm:411> ERROR - Cannot find 'chordbook.bcf'!
-[372] Biber.pm:132> INFO - ERRORS: 1
