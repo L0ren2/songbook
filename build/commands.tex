@@ -1,0 +1,48 @@
+%commands for usage within songs
+
+%create no-lyrics-intro command, usage: \nlintro{\[Am] \[B7] \[C]}
+\newcommand{\nlintro}[1]{%
+  \beginverse*%
+  {\nolyrics \hspace{.7em} I:\hspace{0.49em}#1}%
+  \endverse%
+}
+
+%create intro command, usage: \intro{this is \[Am]some \[B7lyrics for \[C]my intro}
+\newcommand{\intro}[1]{%
+  \beginverse*%
+  \hspace{.7em} I:\hspace{0.49em}#1%
+  \endverse%
+}
+
+%experimental...
+\newcommand{\bridge}[1]{%
+  \begin{minipage}[t]{0.047\textwidth}
+    \vspace{5ex}\hspace{.65em}B: 
+  \end{minipage}
+  \begin{minipage}[t]{0.94\textwidth}
+    \beginverse*%
+    #1%
+    \endverse%
+  \end{minipage}%
+}
+
+%same as nlintro, but will display the word "Solo" instead
+\newcommand{\solo}[1]{%
+  \beginverse*%
+  {\nolyrics \hspace{.4em} S:\hspace{0.6em}#1}%
+  \endverse%
+}
+
+%same as nlintro, but will display the word "Outro" instead
+\newcommand{\nloutro}[1]{%
+  \beginverse*%
+  {\nolyrics \hspace{.24em} O:\hspace{0.54em}#1}%
+  \endverse%
+}
+
+%same as intro, but will display the word "Outro" instead
+\newcommand{\outro}[1]{%
+  \beginverse*%
+  \hspace{-1.5em} Outro:\hspace{0.54em}#1%
+  \endverse%
+}

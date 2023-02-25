@@ -4,19 +4,12 @@
 %Eine Kopie der GPLv2 kann hier eingesehen werden: https://opensource.org/licenses/gpl-2.0.php 
 %Kurzum sagt die Lizenz, dass das Paket genutzt werden darf, und dass der Entwickler des Paketes 
 %für nichts haftbar gemacht werden kann. 
-%Durch die Nutzung des Paketes steht dieses Liederbuch automatisch auch unter der GPLv2 Lizenz. 
+%Durch die Nutzung des Paketes steht dieses Liederbuch automatisch auch unter der GPLv2 (oder einer vergleichbaren kompatiblen) Lizenz. 
 %Für uns heißt das, wenn wir nach Quellcode gefragt werden, diesen auch ausgeben müssen. 
-%Wer unser Liederbuch modifiziert, muss bei Nachfrage ebenfalls sein Buch offenlegen. 
+%Wer die Vorlage unseres Liederbuches nutzt oder modifiziert, muss bei Nachfrage ebenfalls sein Buch offenlegen. 
 %Es muss kenntlich sein, dass Nutzer des Liederbuches diese Rechte haben, 
 %somit muss (am besten in diesem Buch selbst) auf die Lizenz hingewiesen werden. 
 %Ein entsprechender Verweis wurde auf der Titelseite angebracht. 
-%Ein weiteres Problem stellt das Urheberrecht dar, wenn man ein solches Liederbuch bastelt. 
-%Tatsächlich ist es so, dass wir den gesamten Quellcode rausrücken müssen, wenn wir gefragt werden. 
-%Wir dürfen aber die vom Urheberrecht geschützen Liedtexte nicht einfach öffentlich zum Download anbieten. 
-%Mein Ansatz hierfür wäre, die Lieder als separates Projekt anzusehen und auch so zu pflegen,
-%denn dann trifft die GPLv2 nicht auf die Lieder sondern nur auf das Master-Layout zu. 
-%Die offizielle Version des letzten Satzes ist dann: "Wir nutzen nur Urheberrechtlich ungeschütztes Material 
-%und solches, von welchem wir eine Genehmigung haben"
 
 \documentclass{book}
 \usepackage[lmargin=10mm, rmargin=5mm, tmargin=5mm, bmargin=5mm, text={15cm,10cm},centering]{geometry}
@@ -24,7 +17,6 @@
 \usepackage[bookmarks]{hyperref}
 \usepackage[chorded]{songs}
 \usepackage{graphicx}
-\usepackage[ngerman]{babel}
 \usepackage{afterpage}
 
 \pagestyle{empty}
@@ -46,6 +38,9 @@
   \lineskiplimit=1pt
   \lineskip=1pt
 }
+
+%include file for custom commands like \intro
+\input{commands}
 
 \begin{document}
 \input{titelseite}
